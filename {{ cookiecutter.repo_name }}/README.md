@@ -1,10 +1,12 @@
-# cookiecutter-def-proj
+# {{cookiecutter.project_name}}
 
-Project template for data science projects, mainly based on cookiecutter-data-science.
+<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
+    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
+</a>
 
-### The resulting directory structure
+{{cookiecutter.description}}
 
-The directory structure of your new project will look something like this (depending on the settings that you choose):
+## Project Organization
 
 ```
 ├── LICENSE            <- Open-source license if one is chosen
@@ -16,7 +18,7 @@ The directory structure of your new project will look something like this (depen
 │   ├── processed      <- The final, canonical data sets for modeling.
 │   └── raw            <- The original, immutable data dump.
 │
-├── docs               <- Documents
+├── docs               <- A default mkdocs project; see mkdocs.org for details
 │
 ├── models             <- Trained and serialized models, model predictions, or model summaries
 │
@@ -55,4 +57,5 @@ The directory structure of your new project will look something like this (depen
         └── visualize.py
 ```
 
+--------
 

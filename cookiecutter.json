@@ -1,0 +1,13 @@
+{
+  "project_name": "Some proj",
+  "description": "This proj does ...",
+  "author_name": "Matthias Kaeding",
+  "python_version_number": "3.11",
+  "email": "kaedingmatthias@gmail.com",
+  "github_username": "matthiaskaeding",
+  "module_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+  "pypi_username": "{{ cookiecutter.github_username }}",
+  "open_source_license": ["No license file", "MIT", "BSD-3-Clause"],
+  "version": "0.1.0"
+}
