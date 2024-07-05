@@ -18,6 +18,7 @@ clean:
 lint:
 	isort --check --diff --profile black src/
 	ruff --fix
+	ruff format
 
 #################################################################################
 # Self Documenting Commands                                                     #
