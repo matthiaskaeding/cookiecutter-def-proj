@@ -16,7 +16,7 @@ The directory structure of your new project will look something like this (depen
 │   ├── processed      <- The final, canonical data sets for modeling.
 │   └── raw            <- The original, immutable data dump.
 │
-├── docs               <- A default mkdocs project; see mkdocs.org for details
+├── docs               <- Documents
 │
 ├── models             <- Trained and serialized models, model predictions, or model summaries
 │
