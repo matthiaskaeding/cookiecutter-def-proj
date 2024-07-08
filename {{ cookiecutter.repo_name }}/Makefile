@@ -16,9 +16,9 @@ clean:
 ## Lint and fix using isort and ruff
 .PHONY: lint
 lint:
-	isort --check --diff --profile black src/
-	ruff --fix
-	ruff format
+  isort .
+  ruff check --fix
+  ruff format
 
 #################################################################################
 # Self Documenting Commands                                                     #
