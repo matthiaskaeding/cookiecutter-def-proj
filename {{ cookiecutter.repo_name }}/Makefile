@@ -1,7 +1,6 @@
 #################################################################################
-# COMMANDS                                                                      #
+# COMMANDS #
 #################################################################################
-
 ## Install Python Dependencies
 .PHONY: reqs
 reqs:
@@ -16,14 +15,13 @@ clean:
 ## Lint and fix using isort and ruff
 .PHONY: lint
 lint:
-  isort .
-  ruff check --fix
-  ruff format
+	isort .
+	ruff check --fix
+	ruff format
 
 #################################################################################
-# Self Documenting Commands                                                     #
+# Self Documenting Commands #
 #################################################################################
-
 .DEFAULT_GOAL := help
 
 define PRINT_HELP_PYSCRIPT
@@ -36,4 +34,4 @@ endef
 export PRINT_HELP_PYSCRIPT
 
 help:
-	@python -c "${PRINT_HELP_PYSCRIPT}" < $(MAKEFILE_LIST)
+	@python -c "$$PRINT_HELP_PYSCRIPT" < $(MAKEFILE_LIST)
