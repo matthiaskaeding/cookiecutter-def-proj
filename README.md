@@ -15,22 +15,13 @@ The directory structure of your new project will look something like this (depen
 │   ├── interim        # Transformed data
 │   ├── processed      # Final model data
 │   └── raw            # Immutable data dump, possibly the only subfolder sensible to un-ignore
-│
 ├── docs               # Documentation
-│
 ├── notebooks          # Jupyter notebooks, may serve as docs. Usually not production ready code
-│
 ├── pyproject.toml     # Project configuration file with package metadata for {{ cookiecutter.module_name }} and configuration, e.g., for ruff, pytest
-│
 ├── references         # Explanatory materials
 │   └── figures        # Generated graphics and figures. By default ignored
-│
 ├── requirements.txt
 ├── scripts            # Utility scripts
-│
 └── src/{{ cookiecutter.module_name }}  # Source code for use in this project
-│    │
-│    └── __init__.py
-│
 └── tests                # Tests
 ```
