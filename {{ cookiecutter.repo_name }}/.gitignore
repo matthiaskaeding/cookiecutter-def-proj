@@ -3,6 +3,7 @@
 !/data/*/
 /data/*/*
 !/data/*/.gitkeep
+!/data/README.md
 
 # Mac OS-specific storage files
 .DS_Store
