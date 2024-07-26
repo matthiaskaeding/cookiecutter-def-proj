@@ -16,3 +16,6 @@ classifiers = [
 version = "0.0.1"
 readme = "README.md"
 requires-python = "~={{ cookiecutter.python_version_number }}"
+
+[tool.ruff]
+extend-include = ["*.ipynb"]
