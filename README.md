@@ -7,38 +7,30 @@ Project template for data science projects, mainly based on cookiecutter-data-sc
 The directory structure of your new project will look something like this (depending on the settings that you choose):
 
 ```
-├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
+├── LICENSE            # [Optional]
+├── Makefile           # Makefile with self commenting commands
+├── README.md
+├── data               # Data, by default ignored
+│   ├── external       # Data from third party sources.
+│   ├── interim        # Transformed data
+│   ├── processed      # Final model data
+│   └── raw            # Immutable data dump, possibly the only subfolder sensible to un-ignore
 │
-├── docs               <- Documents
+├── docs               # Documentation
 │
-├── models             <- Trained and serialized models, model predictions, or model summaries
+├── notebooks          # Jupyter notebooks, may serve as docs. Usually not production ready code
 │
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
+├── pyproject.toml     # Project configuration file with package metadata for {{ cookiecutter.module_name }} and configuration, e.g., for ruff, pytest
 │
-├── pyproject.toml     <- Project configuration file with package metadata for {{ cookiecutter.module_name }}
-│                         and configuration for tools like black
+├── references         # Explanatory materials
+│   └── figures        # Generated graphics and figures. By default ignored
 │
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+├── requirements.txt
+├── scripts            # Utility scripts
 │
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-├── scripts            <- Utility scripts
-│
-└── src/{{ cookiecutter.module_name }}                <- Source code for use in this project.
+└── src/{{ cookiecutter.module_name }}  # Source code for use in this project
 │    │
 │    └── __init__.py
 │
-└── tests                <- Tests
+└── tests                # Tests
 ```
