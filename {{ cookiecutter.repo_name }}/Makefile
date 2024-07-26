@@ -1,6 +1,3 @@
-#################################################################################
-# COMMANDS #
-#################################################################################
 ## Install Python Dependencies
 .PHONY: reqs
 reqs:
@@ -12,10 +9,10 @@ clean:
 	find . -type f -name "*.py[co]" -delete
 	find . -type d -name "__pycache__" -delete
 
-## Lint and fix using isort and ruff
+## Lint and fix using ruff
 .PHONY: lint
 lint:
-	isort .
+	ruff check --select I --fix
 	ruff check --fix
 	ruff format
 
