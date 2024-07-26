@@ -12,7 +12,7 @@ clean:
 ## Lint and fix using isort and ruff
 .PHONY: lint
 lint:
-	isort .
+	ruff check --select I --fix
 	ruff check --fix
 	ruff format
 
