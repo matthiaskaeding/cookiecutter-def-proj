@@ -1,3 +1,5 @@
+# Targets
+
 ## Install Python Dependencies
 .PHONY: reqs
 reqs:
@@ -16,9 +18,8 @@ lint:
 	ruff check --fix
 	ruff format
 
-#################################################################################
+
 # Self Documenting Commands #
-#################################################################################
 .DEFAULT_GOAL := help
 
 define PRINT_HELP_PYSCRIPT
